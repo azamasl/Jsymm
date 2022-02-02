@@ -1,10 +1,14 @@
 #J-symm code
 
 CC: contians the code to generate run and plot a quadratic convex-concave example
+
 AC: to generate run and plot an instance of unconstrained Analytic Center (AC) problem.
 See Convex Optimization Boyd and Vandenberghe, page 141 for the problem definition.
+
 2D: nonconvex-nonconcave problem
+
 solver.jl: contains implementation for EGM, Broden, and  various versions of J-symm methods.
+
 sp_functions.jl contains the data structure and auxiliary functions
 
 To run a Bilinear/Strongly-convex-concave example:
