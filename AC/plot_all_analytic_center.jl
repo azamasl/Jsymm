@@ -3,7 +3,6 @@ ymin, ymax = 1E-5,1E5
 
 #Loading the problem
 filename = "UCAC-600"
-#filename = "UCAC-600-rs7"
 prob = load("output/problem-"*filename*".jld2")
 TYPE = prob["TYPE"]; tol = prob["F_tol"];
 TYPE = "Analytic Center Problem"

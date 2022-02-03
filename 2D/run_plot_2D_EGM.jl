@@ -22,7 +22,6 @@ max_tr = 0.5 #maximum allowed Δ
 eta = 0.01
 TYPE="Nonconvex-nonconcave 2D function"
 obj = sad_point2D_objective(interaction)
-#@show nbc =  cond(obj.∇F)#sanity check
 
 #################################
 # EGM with the optimal fixed stepsize for the 2D nonconvex-nonconcave function
@@ -108,9 +107,6 @@ plot!( ZZ[1,:],ZZ[2,:], marker = (:circle, 4))
 x_sol, y_sol,iter, nfs, val, ng,ZZ  = EGM_eta([4.0],[2.0],obj,dummy,dummy,max_it,prt,dummy,F_tol)
 plot!( ZZ[1,:],ZZ[2,:], marker = (:circle, 4))
 
-
-#sF= @sprintf(", cond(∇F)= %2.1f",nbFc)
-#sL= @sprintf(", cond(∇L)= %2.1f",nbLc)
 
 plot!(
 #title = string(funcName, ", ", TYPE,", A = $interaction "), titlefont=font(8),

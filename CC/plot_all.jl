@@ -2,9 +2,7 @@ using  Plots, JLD2, Printf
 ymin, ymax = 1E-10,1E5
 xmin, xmax = -100, 4000
 
-#problem that we are plotting
 #Loading the problem
-#filename:1-1000-1 means: 1 problems is CC, m+n=1000 and,
 filename = "0-1000-BC-0"
 filename = "1-1000-BC-0.0001"
 filename = "1-1000-BC-0.01"
