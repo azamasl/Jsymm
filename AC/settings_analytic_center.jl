@@ -23,7 +23,7 @@ stepsize_tol = 1e-6 #"Stepsize smaller than 1e-6 is too small"
 function main()
     Random.seed!(ran_seed);
     #creating a feasible random problem instance
-    A =random_scaled(m,n,scale); xstar = randn(n);b = A*xstar;
+    A =random_scaled(m,n,scale); xstar = randn(n);b  = randn(n);
     x0 = 10*rand(n); y0 = A*x0-b .+ e; w0 = zeros(m,1); # dual var
     ##find negatives in y0 and set them to 1
     indices = findall(t -> t.<0, y0);y0[indices] .=1;
